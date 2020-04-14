@@ -1,3 +1,4 @@
+name: "Pyre-Check Action"
 inputs:
   token:
     description: "GitHub Token to add PR Comment"
