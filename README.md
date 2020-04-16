@@ -22,6 +22,7 @@ jobs:
       uses: lissahyacinth/pyre-check-action@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        pip: "numpy pandas"
 ```
 
 ### Sources
