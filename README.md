@@ -19,7 +19,7 @@ jobs:
       with:
         python-version: '3.x'
     - name: Pyre-Check Action Step
-      uses: lissahyacinth/pyre-check-action@v1
+      uses: lissahyacinth/pyre-check-action@v1.1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         pip: "numpy pandas"
