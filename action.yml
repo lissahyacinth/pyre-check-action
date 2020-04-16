@@ -1,16 +1,21 @@
 name: "Pyre-Check Action"
 inputs:
   token:
-    description: "GitHub Token to add PR Comment"
+    description: GitHub Token to add PR Comment
     required: true
     default: ""
   args:
     description: Pyre Arguments
     required: false
     default: '--source-directory'
+  pip:
+    description: Install Pip Dependencies
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.token }}
     - ${{ inputs.args }}
+    - ${{ inputs.pip }}
