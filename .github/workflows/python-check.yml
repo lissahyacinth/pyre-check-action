@@ -17,4 +17,4 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         pip: "numpy pandas"
-        args: "--source-directory --preserve-pythonpath"
+        args: "--source-directory . --preserve-pythonpath"

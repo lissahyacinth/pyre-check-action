@@ -28,13 +28,13 @@ install_dependencies() {
 
 main() {
   install_dependencies "${PIP_ARGS}"
-  pyre $2 . check > /tmp/PyreOutput.txt
+  pyre $2 check > /tmp/PyreOutput.txt
   comment_title="Pyre Output"
   comment_body=""
 
   comment_body="${comment_body}
 
-<details><summary><code>Pyre Command (> pyre ${PYRE_ARGS} . check)</code></summary>
+<details><summary><code>Pyre Command (> pyre ${PYRE_ARGS} check)</code></summary>
 
 \`\`\`
 $(cat /tmp/PyreOutput.txt)
