@@ -23,6 +23,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         pip: "numpy pandas"
+        args: "--source-directory . --search-path /usr/local/lib/python3.8/site-packages"
 ```
 
 ### Sources
