@@ -11,10 +11,10 @@ jobs:
     - name: Set up Python 3.x
       uses: actions/setup-python@v1
       with:
-        python-version: '3.x'
+        python-version: '3.8'
     - name: Pyre-Check Action Step
       uses: ./
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         pip: "numpy pandas"
-        args: "--source-directory . --preserve-pythonpath"
+        args: "--source-directory . --search-path /usr/local/lib/python3.8/site-packages"
