@@ -7,7 +7,7 @@ inputs:
   args:
     description: Pyre Arguments
     required: false
-    default: '--source-directory'
+    default: '--source-directory .'
   pip:
     description: Install Pip Dependencies
     required: false
