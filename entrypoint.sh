@@ -28,7 +28,7 @@ install_dependencies() {
 
 main() {
   install_dependencies "${PIP_ARGS}"
-  pyre --source-directory . check > /tmp/PyreOutput.txt
+  pyre $2 . check > /tmp/PyreOutput.txt
   comment_title="Pyre Output"
   comment_body=""
 
