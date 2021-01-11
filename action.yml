@@ -1,4 +1,5 @@
 name: "Pyre-Check Action"
+description: "Automatically add Pyre Output to PRs"
 inputs:
   token:
     description: GitHub Token to add PR Comment
